@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Cantarell);
+
+.header {
+  background-color: hsl(38, 68%, 74%);
+}
+
+body {
+  background-color: #D38A6A;
+}
+
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main {
+  width: 100vw;
+}
