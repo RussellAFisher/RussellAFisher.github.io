@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Cantarell);
 
-.header {
-  background-color: hsl(38, 68%, 74%);
+body {
+  background-image: url('Background.png');
 }
 
-body {
-  background-color: #D38A6A;
+.header{
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -19,4 +19,5 @@ h2 {
 
 .main {
   width: 100vw;
+  margin-bottom: 10px;
 }
