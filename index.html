@@ -13,83 +13,82 @@
 </head>
 
 <body>
+    <div id="all">
+        <header>
+            <div class="containter header">
+                <div class="row">
+                  <div class="col-md-1">
 
-    <head>
-        <div class="containter header">
-            <div class="row">
-                <div id="logo" class="col-md-5">
-                    <img src="Curiosity.png" class="img-rounded" alt="" width="270vh" />
-                </div>
-                <div id="search" class="col-md-2">
-                    <h2>
+                  </div>
+                    <div id="logo" class="col-md-5">
+                        <h1 id="page_name">Curiosity</h1>
+                        <h3 id="sub_name">Images From The Rover</h3>
+                    </div>
+                    <div id="search" class="col-md-2">
+                        <h2>
                   Search By:
                 </h2>
-                    <h2>
+                        <h2>
                   Or by Mission Day:
                 </h2>
-                    <h2>
+                        <h2>
                   Camera Angle:
                 </h2>
-                </div>
-                <div id="input" class="col-md-2">
-
-                    <div class="form-group">
-                        <label for="earthdate">August 7th, 2012 to Present</label>
+                    </div>
+                    <div id="input" class="col-md-2">
+                        <div class="form-group">
+                            <label for="earthdate">August 7th, 2012 to Present</label>
+                            <br>
+                            <input type="date" min="2012-08-07" name="earthdate" id="dateBox" value="">
+                            <br>
+                            <br>
+                            <br>
+                            <input type="number" class="form-control" id="solDate" min="1" max="1337" placeholder="Mission day, from 1-1337">
+                            <br>
+                            <br>
+                            <select class="form-control" id="cameraAngle">
+                                <option value="mast" id="mast">Mast</option>
+                                <option value="front hazard avoidance camera" id="fhaz">Front Hazard Avoidance Camera</option>
+                                <option value="rear hazard avoidance camera" id="rhaz">Rear Hazard Avoidance Camera</option>
+                                <option value="mars hand lens imager" id="mahli">Mars Hand Lens Imager</option>
+                                <option value="navigation camera" id="navcam">Navigation Camera</option>
+                                <option value="chemistry and camera complex" id="chemcam">Chemistry Camera</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="enter" class="col-md-2">
+                        <img src="SelfBrand1.png" alt="" width="20%vw"/>
                         <br>
-                        <input type="date" min="2012-08-07" name="earthdate" id="dateBox" value="">
+                        <br><br>
                         <br>
                         <br>
                         <br>
-                        <input type="number" class="form-control" id="solDate" min="1" max="1337" placeholder="Mission day, from 1-1337">
-                        <br>
-                        <br>
-                        <select class="form-control" id="cameraAngle">
-                            <option value="mast" id="mast">Mast</option>
-                            <option value="front hazard avoidance camera" id="fhaz">Front Hazard Avoidance Camera</option>
-                            <option value="rear hazard avoidance camera" id="rhaz">Rear Hazard Avoidance Camera</option>
-                            <option value="mars hand lens imager" id="mahli">Mars Hand Lens Imager</option>
-                            <option value="navigation camera" id="navcam">Navigation Camera</option>
-                            <option value="chemistry and camera complex" id="chemcam">Chemistry Camera</option>
-                        </select>
+                        <input type="submit" class="btn-default btn-lg save" name="name" value="Search">
                     </div>
                 </div>
-                <div id="enter" class="col-md-2">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <input type="submit" class="save" name="name" value="Search/Next Image">
-                </div>
-                <div id="brand" class="col-md-1">
-                    <img src="SelfBrand1.png" alt="" width="50%vw" />
-                </div>
-
             </div>
-
-        </div>
-    </head>
-    <main>
-        <div class="container main">
-            <div class="row" width="100vw">
-                <div class="col-md-6 images">
-                    <div id="imgPlace">
+        </header>
+        <main>
+            <div class="container main">
+                <div class="row" width="100vw">
+                    <div class="col-md-6 images">
+                        <div id="imgPlace">
+                        </div>
                     </div>
-
+                    <div class="col-md-6">
+                        <p id="photoInfo">
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" class="btn btn-lg startHidden" name="name" value="Next Image" style="display: none">
+                        <br>
+                        <br>
+                        <a style="display: none" class="externalLink startHidden" href="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/images/672640main_malin-4_full.jpg?itok=Tl9eLB22">More Information on the Curiosity cameras.</a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <p id="photoInfo">
-
-                    </p>
-                </div>
-
             </div>
-
-        </div>
-
+    </div>
     </main>
     <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
