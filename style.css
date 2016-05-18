@@ -28,18 +28,18 @@ h2 {
     -webkit-text-stroke: 1px black;
 }
 .externalLink {
-    font-size: 30px;
+    font-size: 2em;
     text-decoration: none;
     color: white;
     -webkit-text-stroke: 1px black;
 }
 
 #page_name {
-  font-size: 9em;
+  font-size: 9vw;
   font-family: 'Lora', serif;
 }
 #sub_name{
-    font-size: 2em;
+    font-size: 2.5vw;
     font-family: 'Lora', serif;
 }
 #logo{
