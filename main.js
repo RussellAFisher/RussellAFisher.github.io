@@ -21,7 +21,7 @@ $(document).ready(function() {
             arrayIndex = 0;
         }
         if (earthDate === "") {
-            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + marsDate + "&camera=" + cameraAngle + "&api_key=t5rTsXuOkLjqX0VKm3ZDXDF0pUghwSUtTB5Azlgf").done(function(data) {
+            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + marsDate + "&camera=" + cameraAngle + "&api_key=igxPQttf5Ci0b44mL8nqApUAFXiQtqOBlM7LWhXh").done(function(data) {
                 roverArray = (data.photos);
                 if (arrayIndex >= roverArray.length) {
                     $('#imgPlace').append("<br><br><br><br><br><br><br><h3>Sorry, that's all the images for<br> this camera angle on this day.<br> Try a different angle or change the date.</h3>");
@@ -40,7 +40,7 @@ $(document).ready(function() {
                 $('#photoInfo').append("<br><br><br><br><br><br><br><h3>Sorry, there are no images for<br> this camera angle or this day.<br> This could be due to lack of data<br> or the Sun being between Earth and Mars<br> on the day you queried</h3>");
             });
         } else {
-            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=" + earthDate + "&camera=" + cameraAngle + "&api_key=t5rTsXuOkLjqX0VKm3ZDXDF0pUghwSUtTB5Azlgf").done(function(data) {
+            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=" + earthDate + "&camera=" + cameraAngle + "&api_key=igxPQttf5Ci0b44mL8nqApUAFXiQtqOBlM7LWhXh").done(function(data) {
                 console.log(data);
                 roverArray = (data.photos);
                 if (arrayIndex >= roverArray.length) {
