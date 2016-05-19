@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Cantarell);
+@import url(https://fonts.googleapis.com/css?family=Lora:700);
+body {
+    background-image: url('http://apod.nasa.gov/apod/image/0512/enduranceplus_opportunity_big.jpg');
+    background-size: 100vw;
+}
+#all {
+    background-color: hsla(180, 0%, 62%, .5);
+    height: 200vh;
+}
+.header {
+    margin-bottom: 10px;
+    background-color: hsla(180, 0%, 62%, .7);
+}
+#page_name {
+    font-size: 8vw;
+    font-family: 'Lora', serif;
+}
+#sub_name {
+    font-size: 2.5vw;
+    font-family: 'Lora', serif;
+}
+#logo {
+    border-right-style: solid;
+}
+.main {
+    width: 100vw;
+}
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5vw;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+}
+#photoInfo, #imgPlace {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+.externalLink {
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}

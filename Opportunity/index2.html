@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Opportunity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="all">
+        <header>
+            <div class="container-fluid header">
+                <div class="row">
+                    <div id="logo" class="col-md-6 col-xs-12">
+                        <h1 id="page_name">Opportunity</h1>
+                        <h3 id="sub_name">Images From The Rover</h3>
+                    </div>
+                    <div id="search" class="col-md-2 col-xs-4">
+                        <h2>
+                  Search By:
+                </h2>
+                        <h2>
+                  Or by Mission Day:
+                </h2>
+                        <h2>
+                  Camera Angle:
+                </h2>
+                    </div>
+                    <div id="input" class="col-md-2 col-xs-4">
+                        <div class="form-group">
+                            <label for="earthdate">January, 5th, 2004 to Present</label>
+                            <br>
+                            <input type="date" min="2004-01-04" name="earthdate" id="dateBox" value="">
+                            <br>
+                            <br>
+                            <br>
+                            <input type="number" class="form-control" id="solDate" min="1" max="4379" placeholder="Mission day 1-4379">
+                            <br>
+                            <br>
+                            <select class="form-control" id="cameraAngle">
+                                <option value="front hazard avoidance camera" id="fhaz">Front Hazard Avoidance Camera</option>
+                                <option value="rear hazard avoidance camera" id="rhaz">Rear Hazard Avoidance Camera</option>
+                                <option value="panoramic camera" id="pancam">Panoramic Camera</option>
+                                <option value="navigation camera" id="navcam">Navigation Camera</option>
+                                <option value="miniature thermal emission spectrometer" id="minites">Mini Thermal Emissions Spectrometer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="enter" class="col-md-2 col-xs-4">
+                      <img src="SelfBrand1.png" alt="" width="20%vw" />
+                      <br>
+                      <br>
+                      <a href="/index.html" class="btn btn-default">Home</a>
+                      <br>
+                      <br>
+                      <br>
+                      <input type="submit" class="btn-default btn-lg save" name="name" value="Search">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container main">
+                <div class="row" width="100vw">
+                    <div class="col-md-6 images">
+                        <div id="imgPlace">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="photoInfo">
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" class="btn btn-lg startHidden nextButton" name="name" value="Next Image" style="display: none">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

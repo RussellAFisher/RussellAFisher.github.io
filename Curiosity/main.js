@@ -10,7 +10,7 @@ $(document).ready(function() {
     var getSolDate = "";
     var noImages = "<br><br><br><br><br><br><br><h3>Sorry, there are no images for<br> this camera angle or this day.<br> This could be due to lack of data<br> or the Sun being between Earth and Mars<br> on the day you queried</h3>";
     var noMoreImages = "<br><br><br><br><br><br><br><h3>Sorry, that's all the images for<br> this camera angle on this day.<br> Try a different angle or change the date.</h3>";
-    $(".save, .btn").click(function(event) {
+    $(".save, .nextButton").click(function(event) {
         $(".startHidden").hide();
         $('#imgPlace').empty();
         $('#photoInfo').empty();
