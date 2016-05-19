@@ -1,9 +1,0 @@
-{
-  "firebase": "Q1-RussellFisher",
-  "public": ".",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
-}

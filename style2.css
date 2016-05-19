@@ -16,8 +16,12 @@ a {
     margin-bottom: 10px;
     background-color: hsla(180, 0%, 62%, .7);
 }
-#page_name {
+.page_name {
     font-size: 9vw;
+    font-family: 'Lora', serif;
+}
+#opportunityLogo {
+    font-size: 8vw;
     font-family: 'Lora', serif;
 }
 #sub_name {
@@ -32,7 +36,7 @@ a {
 }
 h3 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.5em;
 }
 h2 {
     font-family: 'Josefin Sans', sans-serif;

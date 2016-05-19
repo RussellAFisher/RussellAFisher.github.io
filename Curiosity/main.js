@@ -23,7 +23,7 @@ $(document).ready(function() {
             arrayIndex = 0;
         }
         if (earthDate === "") {
-            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + marsDate + "&camera=" + cameraAngle + "&api_key=t5rTsXuOkLjqX0VKm3ZDXDF0pUghwSUtTB5Azlgf").done(function(data) {
+            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + marsDate + "&camera=" + cameraAngle + "&api_key=igxPQttf5Ci0b44mL8nqApUAFXiQtqOBlM7LWhXh").done(function(data) {
                 roverArray = (data.photos);
                 if (arrayIndex < roverArray.length) {
                     getEarthDate = data.photos[arrayIndex].earth_date;
@@ -42,7 +42,7 @@ $(document).ready(function() {
                 $('#photoInfo').append(noImages);
             });
         } else {
-            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=" + earthDate + "&camera=" + cameraAngle + "&api_key=t5rTsXuOkLjqX0VKm3ZDXDF0pUghwSUtTB5Azlgf").done(function(data) {
+            $.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=" + earthDate + "&camera=" + cameraAngle + "&api_key=igxPQttf5Ci0b44mL8nqApUAFXiQtqOBlM7LWhXh").done(function(data) {
                 console.log(data);
                 roverArray = (data.photos);
                 if (arrayIndex < roverArray.length) {
